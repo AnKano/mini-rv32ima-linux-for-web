@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'UbuntuMono-Regular';
+  src: url('/fonts/UbuntuMono-Regular.ttf');
+}
+
+body {
+  margin: 0;
+}
+
+#popupButton {
+  display: flex;
+  position: absolute;
+  bottom: 4em;
+  right: 4em;
+
+  height: 4em;
+  width: 4em;
+
+  z-index: 10;
+
+  border-radius: 1em;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.25)
+}
+
+#popupButton:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#popup {
+  position: absolute;
+  z-index: 10;
+  width: 30em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: 'UbuntuMono-Regular';
+  font-size: large;
+
+  color: white;
+  background-color: gray;
+  padding: 1em;
+}

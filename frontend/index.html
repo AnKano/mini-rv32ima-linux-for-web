@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>Linux in Web</title>
+</head>
+
+<body>
+  <div style="display: flex; position: relative; width: 100vw; height: 100vh; background-color: black">
+    <div style="width: 100vw; height: 100vh; background-color: black; overflow: hidden;" id="terminal" />
+    <div id="popupButton">
+      <image style="color: white; height: 3em; width: 3em;" src="info-icon.svg" />
+    </div>
+    <div id="popup">
+      <div style="display:flex; flex-direction: column; padding: 1em; border: 1px solid white;">
+        <span>
+          Based on <a href="https://github.com/cnlohr/mini-rv32ima">cnlohr/mini-rv32ima</a> source code and Linux image.
+          Ported to WebAssebmly using Emscripten and adapted for JavaScript by <a href="https://github.com/AnKano">Ankano</a> while drinking beer just for fun!
+        </span>
+        <span style="padding-top: 0.5em;"><a href="https://github.com/AnKano">Source codes</a></span>
+        <hr style="width: 100%; border: none; border-top: dashed 3px white;" />
+        <span>Additional resources: <a href="https://fonts.google.com/specimen/Ubuntu+Mono">Ubuntu Mono font</a>, <a href="https://www.svgrepo.com/svg/491261/info">Info icon</a></span>
+        <hr style="width: 100%; border: none; border-top: dashed 3px white;" />
+        <span>Click the button on the bottom right corner to hide the message...</span>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
